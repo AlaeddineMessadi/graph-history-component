@@ -6,7 +6,7 @@ const Yaxis = props => {
     <dt className={styles.yaxis}>
     {
         props.points.map((point, index) => (
-            <span>{`${point}%`}</span>
+            <span key={index}>{`${point}%`}</span>
         ))
     }
     </dt>
