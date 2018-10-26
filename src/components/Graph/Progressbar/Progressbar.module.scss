@@ -13,7 +13,7 @@
     &:hover {
       &:after {
         content: attr(data-value);
-        font-size: 1.2ch;
+        font-size: 12px;
         position: absolute;
         background: rgba(22, 52, 80, 1);
         top: -27px;

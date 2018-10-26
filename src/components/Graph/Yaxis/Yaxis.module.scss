@@ -7,17 +7,20 @@
     position: relative;
     color: #ffffff;
     background: #3f91cb;
-    font-size: 1ch;
+    font-size: 10px;
     padding: 5px;
+    width: 35px;
+    text-align: right;
+    font-weight: 600;
     &:after {
       content: "";
       position: absolute;
-      left: -20px;
+      left: -24px;
       bottom: 0;
       top: 0;
-      border-top: 13px solid transparent;
-      border-bottom: 13px solid transparent;
-      border-right: 20px solid #3f91cb;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 24px solid #3f91cb;
     }
   }
 }
