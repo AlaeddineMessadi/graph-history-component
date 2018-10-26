@@ -1,12 +1,13 @@
 .progressbar {
   position: relative;
-  display: table-cell;
-  vertical-align: bottom;
-  height: 200px;
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
   padding: 0 1em;
+  max-width: 40px;
 
   span {
-    display: block;
+    flex: 1;
     position: relative;
     background: rgba(63, 145, 203, 1);
     animation: draw 1s ease-in-out;

@@ -1,6 +1,7 @@
 .bargraph {
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 200px;
   width: 100%;
   max-width: 900px;
   margin: auto;
