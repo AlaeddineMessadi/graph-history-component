@@ -5,13 +5,11 @@
   align-items: flex-end;
   padding: 0 1em;
   max-width: 40px;
-
   span {
     flex: 1;
     position: relative;
     background: rgba(63, 145, 203, 1);
     animation: draw 1s ease-in-out;
-
     &:hover {
       &:after {
         content: attr(data-value);
@@ -23,6 +21,7 @@
         padding: 5px 0;
         z-index: 98;
         width: 100%;
+        min-width: 30px;
         text-align: center;
       }
       &:before {
@@ -44,5 +43,29 @@
 @keyframes draw {
   0% {
     height: 0;
+  }
+}
+
+/* Smartphones */
+
+@media only screen and (max-width: 414px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 750px) and(max-device-width: 1024px) {
+  body {
+    // background-color: blue;
+  }
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+  body {
+    background-color: green;
   }
 }
