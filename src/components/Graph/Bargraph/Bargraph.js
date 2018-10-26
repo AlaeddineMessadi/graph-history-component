@@ -4,21 +4,17 @@ import styles from "./Bargraph.module.scss";
 
 export default class Bargraph extends Component {
   render() {
-    return (
-      <ul className={styles.bargraph}>
+    let res = [];
+    for (let i = 0; i <= 12; i++) {
+      res.push(
         <li>
-          <span style={{height:"5%"}} title="10000" />
+          <span
+            style={{ height: `${Math.floor(Math.random() * 100)}%` }}
+            title={Math.floor(Math.random() * 99999)}
+          />
         </li>
-        <li>
-          <span style={{height:"100%"}} title="21654" />
-        </li>
-        <li>
-          <span style={{height:"20%"}} title="78987" />
-        </li>
-        <li>
-          <span style={{height:"15%"}} title="456549" />
-        </li>
-      </ul>
-    );
+      );
+    }
+    return <ul className={styles.bargraph}>{res}</ul>;
   }
 }
