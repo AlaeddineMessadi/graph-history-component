@@ -10,7 +10,7 @@ export default class Bargraph extends Component {
         <li>
           <span
             style={{ height: `${Math.floor(Math.random() * 100)}%` }}
-            title={Math.floor(Math.random() * 99999)}
+            data-value={Math.floor(Math.random() * 9999)}
           />
         </li>
       );

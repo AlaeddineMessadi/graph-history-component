@@ -2,11 +2,14 @@
   display: table;
   table-layout: fixed;
   width: 100%;
-  max-width: 700px;
-  // height:200px;
+  max-width: 900px;
   margin: auto;
 
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 2%,
+    transparent 2%
+  );
   background-size: 100% 50px;
   background-position: left top;
 
@@ -15,23 +18,41 @@
     display: table-cell;
     vertical-align: bottom;
     height: 200px;
-  }
+    padding: 0 1em;
+  
 
   span {
-    margin: 0 1em;
     display: block;
-    background: rgba(#d1ecfa, 0.75);
+    position: relative;
+    background: rgba(63, 145, 203, 1);
     animation: draw 1s ease-in-out;
 
-    &:after {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-top: -25px;
-      text-align: center;
-      content: attr(title);
+    &:hover {
+      &:after {
+        content: attr(data-value);
+        font-size: 1.2ch;
+        position: absolute;
+        background: rgba(22, 52, 80, 1);
+        top: -27px;
+        color: #fff;
+        padding: 5px 0;
+        z-index: 98;
+        width: 100%;
+        text-align: center;
+      }
+      &:before {
+        border: solid;
+        border-color: rgba(22, 52, 80, 1) transparent;
+        border-width: 6px 6px 0 6px;
+        top: -8px;
+        left: 13px;
+        content: "";
+        position: absolute;
+        z-index: 99;
+      }
     }
   }
+}
 }
 
 // animation draw
