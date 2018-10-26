@@ -21,15 +21,15 @@ const Bargraph = ({ history = [], width = WIDTH, height = HEIGHT }) => {
     graph.push(<Yaxis points={ YAXIS } />);
     graph.push(
       history
-        .sort((a, b) => (a.score < b.score))
+        .sort((a, b) => (new Date(a.date) > new Date(b.date)))   // Sort history by date ( right to left )
         .map((session, index) => (
           <Progressbar
             key={ index }
             percent={ session.score / maxScore * 100 }
             value={ session.score }
           />
-        )
         ))
+    )
   }
   return (
     <dl className={ styles.bargraph } style={ { height, width } }>
