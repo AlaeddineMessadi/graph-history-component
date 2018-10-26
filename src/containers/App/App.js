@@ -14,6 +14,7 @@ class App extends Component {
       <Aux>
         <Header />
         <main className={ styles.app }>
+          <h2 className={ styles.graphTitle }>Your progress in different categories</h2>
           <Bargraph history={ HISTORY.history } height="400" width="100%" />
         </main>
       </Aux>
