@@ -1,4 +1,7 @@
-const HISTORY = {
+/**
+ * The api result provide by the server ( data provide from the exercise)
+ */
+export const HISTORY = {
   history: [
     {
       "score": 4583,
@@ -23,4 +26,10 @@ const HISTORY = {
   ]
 };
 
-export default HISTORY;
+/**
+ * Simulate an api get request
+ * get a response after 5 seconds (example)
+ */
+export const apiGet = new Promise(function (resolve, reject) {
+  setTimeout(() => resolve(HISTORY), 5000);
+});

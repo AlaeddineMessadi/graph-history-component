@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Progressbar.module.scss";
+import React from 'react';
+import styles from './Progressbar.module.scss';
 
 const Progressbar = ({ value, percent }) => (
   <dd className={ styles.progressbar }>

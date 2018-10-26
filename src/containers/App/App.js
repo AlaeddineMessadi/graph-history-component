@@ -3,13 +3,20 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import Bargraph from '../../components/Graph/Bargraph/Bargraph';
 import Aux from '../../hoc/Aux';
-import HISTORY from '../../services/ApiService';
+import { HISTORY, apiGet } from '../../services/ApiService';
 
 // Styles
 import styles from './App.module.scss';
 
 class App extends Component {
+
+
   render() {
+
+    apiGet.then(res =>
+      console.log(res)
+    );
+
     return (
       <Aux>
         <Header />

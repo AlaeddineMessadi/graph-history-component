@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Progressbar from "../Progressbar/Progressbar";
+import React from 'react';
+import Progressbar from '../Progressbar/Progressbar';
 
-import styles from "./Bargraph.module.scss";
-import Yaxis from "../Yaxis/Yaxis";
+import styles from './Bargraph.module.scss';
+import Yaxis from '../Yaxis/Yaxis';
 
 import { maxObjArray } from '../../../utils/Utils';
 import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
