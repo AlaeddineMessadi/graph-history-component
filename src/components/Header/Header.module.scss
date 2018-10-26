@@ -2,10 +2,11 @@
     h1 {
         font-size: 2rem;
         font-weight: 600;
-        padding: 20px;
-        margin:30px;
+        padding: 40px;
         text-align: center;
         border-bottom: 10px solid #DDEDF5;
-        border-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background-color: #ffffff;
     }
 }
