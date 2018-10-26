@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Progressbar from "../Progressbar/Progressbar";
 
 import styles from "./Bargraph.module.scss";
 
@@ -7,12 +8,10 @@ export default class Bargraph extends Component {
     let res = [];
     for (let i = 0; i <= 12; i++) {
       res.push(
-        <li>
-          <span
-            style={{ height: `${Math.floor(Math.random() * 100)}%` }}
-            data-value={Math.floor(Math.random() * 9999)}
-          />
-        </li>
+        <Progressbar
+          height={Math.floor(Math.random() * 100)}
+          value={Math.floor(Math.random() * 9999)}
+        />
       );
     }
     return <ul className={styles.bargraph}>{res}</ul>;
