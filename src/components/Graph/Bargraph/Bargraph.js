@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Progressbar from "../Progressbar/Progressbar";
 
 import styles from "./Bargraph.module.scss";
+import Yaxis from "../Yaxis/Yaxis";
 
 export default class Bargraph extends Component {
   render() {
@@ -16,6 +17,11 @@ export default class Bargraph extends Component {
         />
       );
     }
-    return <ul className={styles.bargraph}>{res}</ul>;
+    return (
+      <dl className={styles.bargraph}>
+        <Yaxis points={[25, 50, 75, 100]} />
+        {res}
+      </dl>
+    );
   }
 }

@@ -1,0 +1,25 @@
+.yaxis {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  transform: translate3d(100%, -12%, 0);
+
+  span {
+      position: relative;
+    color: #ffffff;
+    background: #3f91cb;
+    font-size: 1.5ch;
+    padding: 5px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        top: 0;
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-right: 20px solid #3f91cb;
+    }
+  }
+}
