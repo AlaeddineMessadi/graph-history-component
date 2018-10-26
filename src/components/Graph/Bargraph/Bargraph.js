@@ -13,7 +13,7 @@ const Bargraph = ({ history = [], width = WIDTH, height = HEIGHT }) => {
 
   return (
     <dl className={ styles.bargraph } style={ { height, width } }>
-      <Yaxis points={ yAxis } />
+      <Yaxis points={ YAXIS } />
       {
         history
           .sort((a, b) => (a.score < b.score))
