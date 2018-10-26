@@ -9,20 +9,21 @@ import { HISTORY, apiGet } from '../../services/ApiService';
 import styles from './App.module.scss';
 
 class App extends Component {
+  state = { history: [] }
 
+  componentWillMount() {
+    apiGet.then(res =>
+      this.setState({ ...this.state, history: res.history })
+    );
+  }
 
   render() {
-
-    apiGet.then(res =>
-      console.log(res)
-    );
-
     return (
       <Aux>
         <Header />
         <main className={ styles.app }>
           <h2 className={ styles.graphTitle }>Your progress in different categories</h2>
-          <Bargraph history={ HISTORY.history } height="400" width="100%" />
+          <Bargraph history={ this.state.history } height="400" width="100%" />
         </main>
       </Aux>
     );

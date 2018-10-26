@@ -28,8 +28,8 @@ export const HISTORY = {
 
 /**
  * Simulate an api get request
- * get a response after 5 seconds (example)
+ * get a response after 2 seconds (example)
  */
 export const apiGet = new Promise(function (resolve, reject) {
-  setTimeout(() => resolve(HISTORY), 5000);
+  setTimeout(() => resolve(HISTORY), 2000);
 });
