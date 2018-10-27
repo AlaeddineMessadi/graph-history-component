@@ -7,17 +7,24 @@ import Loader from '../Loader/Loader';
 
 import { maxObjArray } from '../../../utils/Utils';
 import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
+import Aux from '../../../hoc/Aux';
 
-const Bargraph = ({ history = [], loading, width = WIDTH, height = HEIGHT }) => {
+/**
+ * BarGraph component
+ * 
+ * @param {object} param0
+ */
+const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT }) => {
 
   const maxScore = maxObjArray(history);
-  let graph = [];
+  let container = [<Loader key="loader" />];
 
-  if (loading) {
-    graph.push(<Loader />)
-  } else {
-    graph.push(<Yaxis points={ YAXIS } />);
-    graph.push(
+  if (!loading) {
+    // empty the container 
+    container.length = 0;
+
+    container.push(<Yaxis key="yaxis" points={ YAXIS } />);
+    container.push(
       history
         .sort((a, b) => (new Date(a.date) > new Date(b.date)))   // Sort history by date ( right to left )
         .map((session, index) => (
@@ -30,9 +37,12 @@ const Bargraph = ({ history = [], loading, width = WIDTH, height = HEIGHT }) => 
     )
   }
   return (
-    <dl className={ styles.bargraph } style={ { height, width } }>
-      { graph }
-    </dl>
+    <main className={ styles.container }>
+      <h3 className={ styles.graphTitle }>{ title }</h3>
+      <dl className={ styles.bargraph } style={ { height, width } }>
+        { container }
+      </dl>
+    </main>
   );
 }
 

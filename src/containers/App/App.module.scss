@@ -1,34 +1,6 @@
-.app {
-  background-color: #ffffff;
-  margin: 20px;
-  padding: 20px 55px 25px 20px;
-  .graphTitle {
-    margin-bottom: 29px;
-    font-size: 16px;
-    font-weight: 300;
-  }
+.title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  margin: 30px;
 }
-
-/* Smartphones */
-
-@media only screen and (min-width: 414px) {
-  .app {
-    margin: 50px 40px;
-    .graphTitle {
-      font-size: 18px;
-    }
-  }
-}
-
-// /** Large Smartphones */
-// @media only screen and (min-width: 415px) and (max-width: 749px) {
-//   .app {
-//     margin: 50px;
-//     padding: 0 40px;
-//   }
-// }
-// @media only screen and (min-device-width: 750px) and(max-device-width: 1024px) {
-//   body {
-//     // background-color: blue;
-//   }
-// }

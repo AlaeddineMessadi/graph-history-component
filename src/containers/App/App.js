@@ -20,10 +20,13 @@ class App extends Component {
     return (
       <Aux>
         <Header />
-        <main className={ styles.app }>
-          <h2 className={ styles.graphTitle }>Your progress in different categories</h2>
-          <Bargraph history={ this.props.history } loading={ this.props.loading } height="400" width="100%" />
-        </main>
+        <h2 className={ styles.title }>Your Progress</h2>
+        <Bargraph
+          history={ this.props.history }
+          loading={ this.props.loading }
+          title="Your progress in different categories"
+          height="400"
+          width="100%" />
       </Aux>
     );
   }

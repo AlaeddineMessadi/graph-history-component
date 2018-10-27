@@ -1,5 +1,9 @@
 import React from 'react'
 import styles from './Loader.module.scss';
+
+/**
+ * Loader (spinner) component
+ */
 const Loader = () => {
   return (
     <div className={ styles.loader }>

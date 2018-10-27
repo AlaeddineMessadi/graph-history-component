@@ -63,7 +63,7 @@
   }
 }
 
-@media only screen and (min-device-width: 750px) and(max-device-width: 1024px) {
+@media only screen and (min-width: 750px) {
   .progressbar {
     padding: 0 10px;
     max-width: 40px;
