@@ -8,12 +8,12 @@ import Loader from '../Loader/Loader';
 import { maxObjArray } from '../../../utils/Utils';
 import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
 
-const Bargraph = ({ history = [], width = WIDTH, height = HEIGHT }) => {
+const Bargraph = ({ history = [], loading, width = WIDTH, height = HEIGHT }) => {
 
   const maxScore = maxObjArray(history);
   let graph = [];
 
-  if (history.length <= 0) {
+  if (loading) {
     graph.push(<Loader />)
   } else {
     graph.push(<Yaxis points={ YAXIS } />);
