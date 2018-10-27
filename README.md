@@ -7,24 +7,22 @@ Bargraph component displays a graph with the history of the last 12 sessions.
 
 ## Bargraph
 
-| parameters   |      type      |  example       |
-|--------------|:--------------:|----------------|
-| history      |  json          | [{             |
-|              |                |   "score": 11, |
-|              |                |   "date": 222  |
-|              |                | }]             |
-|--------------|:--------------:|----------------|
-| loading      |    boolean     |                |
-|--------------|:--------------:|----------------|
-| col 3 is     | right-aligned  |    $1 |
-|--------------|:--------------:|----------------|
+| parameters   |      type      |
+|--------------|:--------------:|
+| history      |      json      |
+| loading      |    boolean     |
+| title        |     String     |
+| width        |     int        |
+| height       |     int        |
+| margin       |     int        |
+
 
 ## Demo
 
 [DEMO link](https://build-rmrgjgvhlc.now.sh/ )
 
 ## Screenshot
-![NeuroNation Coding Challenge](https://raw.githubusercontent.com/AlaeddineMessadi/neuro-nation-coding-challenge/master/assets/screen_shot.png)
+![NeuroNation Coding Challenge](https://raw.githubusercontent.com/AlaeddineMessadi/neuro-nation-coding-challenge/master/src/assets/screen_shot.png)
 
 ### Prerequisites
 [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/en/docs/install) installed
