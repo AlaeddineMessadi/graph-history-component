@@ -31,5 +31,5 @@ export const isEarlyThan = (date1, date2) => (
  */
 export const appendUnit = (str, percent) => {
   if (percent) return `${str}%`;
-  return str.search(/px|%/g) > 0 ? str : `${str}px`;
+  return str.toString().search(/px|%/g) > 0 ? str : `${str}px`;
 }

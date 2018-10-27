@@ -38,6 +38,7 @@ const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT
   }
   return (
     <main className={ styles.container }>
+      <h1>a</h1>
       <h3 className={ styles.graphTitle }>{ title }</h3>
       <dl className={ styles.bargraph } style={ { height: appendUnit(height), maxWidth: appendUnit(width) } }>
         { container }
