@@ -24,3 +24,12 @@ export const maxObjArray = (arr, key = 'score') => (
 export const isEarlyThan = (date1, date2) => (
   new Date(date1) > new Date(date2)
 )
+
+/**
+ * Append px unit or percent to value
+ * @param {String} str 
+ */
+export const appendUnit = (str, percent) => {
+  if (percent) return `${str}%`;
+  return str.search(/px|%/g) > 0 ? str : `${str}px`;
+}

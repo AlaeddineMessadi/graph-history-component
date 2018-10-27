@@ -25,7 +25,7 @@ class App extends Component {
           history={ this.props.history }
           loading={ this.props.loading }
           title="Your progress in different categories"
-          height="400"
+          height="200"
           width="100%" />
       </Aux>
     );

@@ -5,7 +5,7 @@ import styles from './Bargraph.module.scss';
 import Yaxis from '../Yaxis/Yaxis';
 import Loader from '../Loader/Loader';
 
-import { maxObjArray, isEarlyThan } from '../../../utils/Utils';
+import { maxObjArray, isEarlyThan, appendUnit } from '../../../utils/Utils';
 import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
 import Aux from '../../../hoc/Aux';
 
@@ -39,7 +39,7 @@ const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT
   return (
     <main className={ styles.container }>
       <h3 className={ styles.graphTitle }>{ title }</h3>
-      <dl className={ styles.bargraph } style={ { height, width } }>
+      <dl className={ styles.bargraph } style={ { height: appendUnit(height), maxWidth: appendUnit(width) } }>
         { container }
       </dl>
     </main>
