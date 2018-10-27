@@ -30,11 +30,8 @@ export const HISTORY = {
  * Simulate an Async api get request
  * get a response after 2 seconds (example)
  */
-export const fetchAllSessionsAsync = () => {
-  var promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      resolve(HISTORY);
-    }, 2000);
-  });
-  return promise;
+export const fetchAllSessionsAsync = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(HISTORY), 2000)
+  })
 };
