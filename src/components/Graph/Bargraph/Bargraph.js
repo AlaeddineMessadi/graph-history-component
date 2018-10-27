@@ -5,7 +5,7 @@ import styles from './Bargraph.module.scss';
 import Yaxis from '../Yaxis/Yaxis';
 import Loader from '../Loader/Loader';
 
-import { maxObjArray } from '../../../utils/Utils';
+import { maxObjArray, isEarlyThan } from '../../../utils/Utils';
 import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
 import Aux from '../../../hoc/Aux';
 
@@ -26,7 +26,7 @@ const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT
     container.push(<Yaxis key="yaxis" points={ YAXIS } />);
     container.push(
       history
-        .sort((a, b) => (new Date(a.date) > new Date(b.date)))   // Sort history by date ( right to left )
+        .sort((a, b) => isEarlyThan(a.date, b.date))   // Sort history by date ( right to left )
         .map((session, index) => (
           <Progressbar
             key={ index }

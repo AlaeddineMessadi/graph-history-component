@@ -13,3 +13,14 @@ export const maxObjArray = (arr, key = 'score') => (
     arr.map(session => (session['score']))
   )
 )
+
+/**
+ * Compare two dates (Timestamp) 
+ * date1 earlier or older than date2
+ * 
+ * @param {Int} date1 
+ * @param {Int} date2 
+ */
+export const isEarlyThan = (date1, date2) => (
+  new Date(date1) > new Date(date2)
+)
