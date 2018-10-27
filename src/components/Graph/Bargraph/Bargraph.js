@@ -14,7 +14,7 @@ import Aux from '../../../hoc/Aux';
  * 
  * @param {object} param0
  */
-const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT }) => {
+const Bargraph = ({ history = [], loading, margin, title, width = WIDTH, height = HEIGHT }) => {
 
   const maxScore = maxObjArray(history);
   let container = [<Loader key="loader" />];
@@ -36,9 +36,10 @@ const Bargraph = ({ history = [], loading, title, width = WIDTH, height = HEIGHT
         ))
     )
   }
+
+  console.log(margin);
   return (
-    <main className={ styles.container }>
-      <h1>a</h1>
+    <main className={ styles.container } style={ { margin: appendUnit(margin) } } >
       <h3 className={ styles.graphTitle }>{ title }</h3>
       <dl className={ styles.bargraph } style={ { height: appendUnit(height), maxWidth: appendUnit(width) } }>
         { container }

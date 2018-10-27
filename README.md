@@ -5,6 +5,19 @@ Implement the Overall Progress History Component
 ## Description
 Bargraph component displays a graph with the history of the last 12 sessions.
 
+## Bargraph
+
+| parameters   |      type      |  example       |
+|--------------|:--------------:|----------------|
+| history      |  json          | [{             |
+|              |                |   "score": 11, |
+|              |                |   "date": 222  |
+|              |                | }]             |
+|--------------|:--------------:|----------------|
+| loading      |    boolean     |                |
+|--------------|:--------------:|----------------|
+| col 3 is     | right-aligned  |    $1 |
+|--------------|:--------------:|----------------|
 
 ## Demo
 
