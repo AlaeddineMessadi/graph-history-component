@@ -1,2 +1,2 @@
-export const FETCH_HISTORY = 'GET_HISTORY';
+export const FETCH_HISTORY = 'FETCH_HISTORY';
 export const HISTORY_RECEIVED = 'HISTORY_RECEIVED';

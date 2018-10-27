@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Header from '../../components/Header/Header';
@@ -10,16 +10,23 @@ import { fetchHistory } from '../../store/actions';
 // Styles
 import styles from './App.module.scss';
 
-const App = ({ history, loading }) => {
-  return (
-    <Aux>
-      <Header />
-      <main className={ styles.app }>
-        <h2 className={ styles.graphTitle }>Your progress in different categories</h2>
-        <Bargraph history={ history } loading={ loading } height="400" width="100%" />
-      </main>
-    </Aux>
-  );
+class App extends Component {
+
+  componentDidMount() {
+    this.props.fetchHistory();
+  }
+
+  render() {
+    return (
+      <Aux>
+        <Header />
+        <main className={ styles.app }>
+          <h2 className={ styles.graphTitle }>Your progress in different categories</h2>
+          <Bargraph history={ this.props.history } loading={ this.props.loading } height="400" width="100%" />
+        </main>
+      </Aux>
+    );
+  }
 }
 
 const mapStateToProps = (state) => ({

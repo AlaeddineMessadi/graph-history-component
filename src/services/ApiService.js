@@ -27,9 +27,14 @@ export const HISTORY = {
 };
 
 /**
- * Simulate an api get request
+ * Simulate an Async api get request
  * get a response after 2 seconds (example)
  */
-export const fetchAllSessions = new Promise(function (resolve, reject) {
-  setTimeout(() => resolve(HISTORY), 2000);
-});
+export const fetchAllSessionsAsync = () => {
+  var promise = new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      resolve(HISTORY);
+    }, 2000);
+  });
+  return promise;
+};

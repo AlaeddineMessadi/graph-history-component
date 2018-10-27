@@ -5,7 +5,7 @@ const reducer = (state = {}, action) => {
     case actions.FETCH_HISTORY:
       return { ...state, loading: true };
     case actions.HISTORY_RECEIVED:
-      return { ...state, news: action.json[0], loading: false }
+      return { ...state, history: action.history, loading: false }
     default:
       return state;
   }

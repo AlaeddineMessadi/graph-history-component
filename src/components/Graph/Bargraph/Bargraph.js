@@ -1,6 +1,5 @@
 import React from 'react';
 import Progressbar from '../Progressbar/Progressbar';
-import Aux from '../../../hoc/Aux';
 
 import styles from './Bargraph.module.scss';
 import Yaxis from '../Yaxis/Yaxis';
