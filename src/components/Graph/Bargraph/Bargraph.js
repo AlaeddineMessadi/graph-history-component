@@ -12,7 +12,6 @@ import { WIDTH, HEIGHT, YAXIS } from '../../../utils/default';
 const Bargraph = ({ history = [], width = WIDTH, height = HEIGHT }) => {
 
   const maxScore = maxObjArray(history);
-
   let graph = [];
 
   if (history.length <= 0) {

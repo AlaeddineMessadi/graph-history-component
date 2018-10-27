@@ -30,6 +30,6 @@ export const HISTORY = {
  * Simulate an api get request
  * get a response after 2 seconds (example)
  */
-export const apiGet = new Promise(function (resolve, reject) {
+export const fetchAllSessions = new Promise(function (resolve, reject) {
   setTimeout(() => resolve(HISTORY), 2000);
 });
