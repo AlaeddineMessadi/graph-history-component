@@ -37,7 +37,6 @@ const Bargraph = ({ history = [], loading, margin, title, width = WIDTH, height 
     )
   }
 
-  console.log(margin);
   return (
     <main className={ styles.container } style={ { margin: appendUnit(margin) } } >
       <h3 className={ styles.graphTitle }>{ title }</h3>
