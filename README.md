@@ -1,4 +1,4 @@
-# NeuroNation Coding Challenge ( React )
+# Graph History
 
 Implement the Overall Progress History Component
 
