@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -1380,3 +1380,35 @@ patch:
         patched: '2021-02-01T19:59:04.284Z'
     - react-scripts > jest > jest-cli > jest-runner > jest-runtime > jest-config > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
         patched: '2021-02-01T19:59:04.284Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-runner > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-runner > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-runner > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-runner > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-runner > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-runner > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-05-23T12:18:45.555Z'
